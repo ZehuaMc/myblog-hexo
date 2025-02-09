@@ -4,6 +4,9 @@
 LOCAL_DIR=./public  # 要压缩的本地目录
 REMOTE_DIR=/opt/1panel/apps/openresty/openresty/www/sites/200502.xyz/index  # 服务器上的目标目录
 TAR_FILE=hexo.tar.gz  # 压缩文件名
+echo "生成网页"
+hexo clean
+hexo g
 
 # 1. 压缩本地目录
 echo "开始压缩本地目录..."
